@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
 const sequelize = require('../bin/sequelize')
-module.exports = sequelize.define('newsData', {
+const NewsData = sequelize.define('news_data', {
     body: { type: Sequelize.TEXT, allowNull: false },
 });
+module.exports = NewsData;
