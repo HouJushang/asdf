@@ -3,6 +3,8 @@ const router = require('./module/router');
 const session = require('./bin/session')
 const config = require('./config/www')
 var koaBody = require('koa-body');
+var cors = require('koa2-cors');
+app.use(cors());
 
 require('./util/globalFunction')
 
